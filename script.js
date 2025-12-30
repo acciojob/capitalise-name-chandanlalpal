@@ -1,6 +1,6 @@
 //your JS code here. If required.
- let inputBox = document.getElementById("fname");
+ let input = document.querySelector("#fname");
 
-inputBox.onblur = function () {
-  inputBox.value = inputBox.value.toUpperCase();
-};
+input.addEventListener("blur",(e)=>{
+  console.log(e.target.value.toUpperCase());
+})
